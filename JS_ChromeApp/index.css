@@ -1,0 +1,48 @@
+body {
+	background-color: #b2bec3;
+}
+
+body {
+	color: orange;
+	/* transition: color 0.5s ease-in-out */
+}
+
+h1 {
+	color: #34495e;
+	transition: color 0.5s ease-in-out;
+}
+
+.clicked {
+	color: #7f8c8d;
+}
+
+.form,
+.greetings {
+	display: none;
+}
+
+.showing {
+	display: block;
+	/* 코드는 클래스중에 showing이 있는 HTML요소를 화면에 보이게한다로 알고계시면 돼요. 
+	그러니까 요약하면 greeting(h4요소)의 클래스 목록에 showing을 추가해서 
+	화면에 보이게한다! 가 돼요 */
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.bgImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: fadeIn 0.5s linear;
+}
